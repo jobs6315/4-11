@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+    printf("printf(\"Hello world!\\n\");");
+    printf("\n");
+    printf("cout << \"Hello world!\" << endl;");
+    return 0;
+}
+int MAX(int a,int b,int c,int d)
+{
+    int e=a;
+    if(e<b)
+        e=b;
+    if(e<c)
+        e=c;
+    if(e<d)
+        e=d;
+    return e;
+}
+int main()
+{
+    int a,b,c,d;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    int e=MAX(a,b,c,d);
+    printf("%d",e);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+    float r;
+    double V;//因为float只占四个字节，有效位是7位 需要用double
+    scanf("%f",&r);
+    V=(4.000*3.1415926*r*r*r)/3.000;
+    printf("%.3f",V);
+    return 0;
+}
+#include<stdio.h>
+int main()
+{
+  int weight=0;
+  int hight=0;
+  scanf("%d %d",&weight,&hight);
+  double hight_meter=hight/100.0;
+  float BMI=weight/(hight_meter*hight_meter);
+  printf("%.2f",BMI);
+  return 0;
+}
